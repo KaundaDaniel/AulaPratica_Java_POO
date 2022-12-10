@@ -31,7 +31,7 @@ public class Diarista extends Pessoa {
             var saldoAtual = novoSaldo - valor;
             this.setSaldo(saldoAtual);
         }else{
-            System.out.println("Imposs]ivel fazer a operação!");
+            System.out.println("Impossível fazer a operação!");
         }
 
     }

@@ -53,7 +53,10 @@ public abstract class Pessoa  implements IsSaldo{
     protected void setSaldo(double saldo) {
         this.saldo = saldo;
     }
-    
+    public void transferir(IsSaldo objecto, double valor) {
+        this.sacar(valor);
+        objecto.depositar(valor);
+    }
     @Override
     public String toString(){
         return "nome: "+ nome + " Telefone: " + telefone + "Endereco: " + endereco;
