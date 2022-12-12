@@ -21,7 +21,7 @@ public class testaDiarista {
         cliente2.transferir(cliente, 230.90);
         var diarista4= new Diarista("Joy","897653","Maianga", "93494242");
         var diariasta5= new Diarista("Joy","897653","Maianga", "93494242");
-        System.out.println(diariasta5.equals(diarista4);
+        System.out.println(diariasta5.equals(diarista4));
 
         
         System.out.println(cliente2.getSaldo());
@@ -33,6 +33,13 @@ public class testaDiarista {
         // diarista1=new Diarista("Lucia", "912456786", "Maianga");
         System.out.println("Dados da Diarista: " + diarista.toString());
         System.out.println("Dados da Diarista: " + cliente.toString());
+        var atendimento= new Atendimento();
+        atendimento.setCliente(cliente);
+        atendimento.setData("20/04/2022");
+        atendimento.setDiarista(diariasta5);
+        atendimento.setHoras(10);
+        System.out.println(atendimento.getCliente().getNome());
+        System.out.println(atendimento.getDiarista().getNome());
         
     }
 }
