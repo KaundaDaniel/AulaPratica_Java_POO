@@ -43,5 +43,7 @@ public class Cliente extends Pessoa{
     }
 
    
-    
+    public String toString(){
+    return "Nome do Cliente:"+ getNome();
+    }
 }

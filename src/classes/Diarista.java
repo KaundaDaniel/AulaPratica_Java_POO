@@ -47,4 +47,10 @@ public class Diarista extends Pessoa {
         }
 
     }
+    public String toString() {
+        return  "Nome da Diarista: " + getNome();
+    }
+    
+
+
 }
