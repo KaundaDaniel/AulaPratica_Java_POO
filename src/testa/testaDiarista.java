@@ -17,7 +17,7 @@ public class testaDiarista {
         diarista.setNome("Marta");
         System.out.println("Saldo da Diarista " +diarista.getSaldo());
         var cliente2= new Cliente("Pedro", "93494242", "Palanca");
-        cliente2.depositar(1290.8);
+        cliente2.depositar(1390.8);
         cliente2.transferir(cliente, 230.90);
         
         System.out.println(cliente2.getSaldo());
